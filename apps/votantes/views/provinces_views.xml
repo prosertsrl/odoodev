@@ -32,7 +32,7 @@
     </record>
 
     <!-- actions opening views on models -->
-    <record model="ir.actions.act_window" id="votantes.action_window_provinces">
+    <record model="ir.actions.act_window" id="votantes.action_window_province">
       <field name="name">Provinces</field>
       <field name="res_model">votantes.provinces</field>
       <field name="view_mode">tree,form</field>
@@ -41,11 +41,11 @@
 
     <!-- Top menu item -->
     <menuitem
-            name="votantes" id="votantes.menu_root"
+            name="votantes" id="votantes.votantes_menu_root"
             web_icon="votantes,static/description/icon.png"
     />
     <!-- menu categories -->
-    <menuitem name="Provinces" id="votantes.catg_menu_province" parent="votantes.menu_root"/>
+    <menuitem name="Provinces" id="votantes.catg_menu_province" parent="votantes.votantes_menu_root"/>
     <!-- actions -->
     <menuitem name="Province" id="votantes.action_menu_province" parent="votantes.catg_menu_province"
               action="votantes.action_window_province"/>
