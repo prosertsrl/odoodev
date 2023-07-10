@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+       <record id="group_taller_user" model="res.groups">
+           <field name="name">Gestion Taller Usuaio</field>
+       </record>
+        <record id="group_taller_manager" model="res.groups">
+           <field name="name">Gestion Taller Admin</field>
+       </record>
+
+
+    </data>
+</odoo>

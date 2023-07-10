@@ -22,6 +22,8 @@
 
     # always loaded
     'data': [
+        'data/brands.xml',
+        'security/groups.xml',
         'security/ir.model.access.csv',
         'views/car_views.xml',
     ],

@@ -8,6 +8,7 @@
                 <tree>
                     <field name="name"/>
                     <field name="tuition"/>
+                    <field name="customer_id"/>
                     <field name="date_car"/>
                     <field name="km" optional="hide"/>
                 </tree>
@@ -21,7 +22,12 @@
                 <form string="Car Form">
                     <sheet>
                         <group>
+                            <field name="customer_id"/>
+                            <field name="country_id"/>
+                        </group>
+                        <group>
                             <field name="name"/>
+                            <field name="brand"/>
                             <field name="tuition"/>
                             <field name="date_car"/>
                             <field name="km"/>
