@@ -3,7 +3,7 @@
 from odoo import models, fields
 
 
-class votantes(models.Model):
+class Provinces(models.Model):
     _name = 'votantes.provinces'
     _description = 'votantes.provinces'
 
