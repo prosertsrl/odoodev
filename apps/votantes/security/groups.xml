@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="group_votantes_user" model="res.groups">
+            <field name="name">User Voter Management</field>
+        </record>
+        <record id="group_votantes_manager" model="res.groups">
+            <field name="name">Admin Voter Management</field>
+        </record>
+
+    </data>
+</odoo>

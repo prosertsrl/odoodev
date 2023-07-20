@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+votantes.access_votantes_provinces_all,access_votantes_provinces_all,votantes.model_votantes_provinces,base.group_user,1,0,0,0
+votantes.access_votantes_provinces_user,access_votantes_provinces_user,votantes.model_votantes_provinces,group_votantes_user,1,1,0,0
+votantes.access_votantes_provinces_manager,access_votantes_provinces_manager,votantes.model_votantes_provinces,group_votantes_manager,1,1,1,0

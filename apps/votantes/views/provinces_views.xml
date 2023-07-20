@@ -1,0 +1,52 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="votantes.list_provinces_view">
+      <field name="name">votantes provinces list</field>
+      <field name="model">votantes.provinces</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="description"/>
+          <field name="population"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="votantes.form_provinces_view" model="ir.ui.view">
+        <field name="name">votantes provinces form</field>
+        <field name="model">votantes.provinces</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="description"/>
+                        <field name="population"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="votantes.action_window_province">
+      <field name="name">Provinces</field>
+      <field name="res_model">votantes.provinces</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Top menu item -->
+    <menuitem
+            name="votantes" id="votantes.votantes_menu_root"
+            web_icon="votantes,static/description/icon.png"
+    />
+    <!-- menu categories -->
+    <menuitem name="Provinces" id="votantes.catg_menu_province" parent="votantes.votantes_menu_root"/>
+    <!-- actions -->
+    <menuitem name="Province" id="votantes.action_menu_province" parent="votantes.catg_menu_province"
+              action="votantes.action_window_province"/>
+  </data>
+</odoo>
