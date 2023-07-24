@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from odoo import api,models, fields
+from odoo import api, models, fields
 
 
-class RepairOrderLine(models.model):
+class RepairOrderLine(models.Model):
     _name = 'taller.repair.order.line'
 
-    order_id = fields.Many2one(comodel_name="taller.repair.order")
+    order_id = fields.Many2one(comodel_name="taller.repair.order", required=True, ondelete="cascade", index=True, copy=False)
     qty = fields.Float(string="Quantity")
     product_id = fields.Many2one(comodel_name="product.product", string="Product")
 
@@ -14,7 +14,9 @@ class RepairOrderLine(models.model):
 
     price_subtotal = fields.Monetary(compute='_compute_amount', string='Subtotal', store=True)
 
-    @api.depends('product_uom_qty','price_unit')
+    currency_id = fields.Many2one('res.currency', default=lambda self: self.env.company.currency_id, required=True)
+
+    @api.depends('qty', 'price_unit')
     def _compute_amount(self):
         """
         Compute the amounts of the SO line.
