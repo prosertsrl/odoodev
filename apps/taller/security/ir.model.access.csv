@@ -1,7 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-taller.access_taller_car_all,access_taller_car_all,taller.model_taller_car,base.group_user,1,0,0,0
-taller.access_taller_brand_all,access_taller_brand_all,taller.model_taller_brand,base.group_user,1,1,1,0
-taller.access_taller_car_user,access_taller_car_user,taller.model_taller_car,taller.group_taller_user,1,1,0,0
-taller.access_taller_car_manager,access_taller_car_manager,taller.model_taller_car,taller.group_taller_manager,1,1,1,0
-taller.access_taller_repair_order_all,access_taller_repair_order_all,taller.model_taller_repair_order,base.group_user,1,1,1,1
-taller.access_taller_repair_order_line_all,access_taller_repair_order_line_all,taller.model_taller_repair_order_line,base.group_user,1,1,1,1
