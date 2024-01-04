@@ -6,6 +6,9 @@
             <field name="model">taller.car</field>
             <field name="arch" type="xml">
                 <tree>
+                    <field name="customer_id"/>
+                    <field name="country_id"/>
+                    <field name="brand"/>
                     <field name="name"/>
                     <field name="registration"/>
                     <field name="date_car"/>
@@ -22,6 +25,11 @@
                 <form string="Car Form">
                     <sheet>
                         <group>
+                            <field name="customer_id"/>
+                            <field name="country_id"/>
+                        </group>
+                        <group>
+                            <field name="brand"/>
                             <field name="name"/>
                             <field name="registration"/>
                             <field name="date_car"/>

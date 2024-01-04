@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="car_audi" model="taller.brand">
+            <field name="name">Audi</field>
+        </record>
+        <record id="car_toyota" model="taller.brand">
+            <field name="name">Toyota</field>
+        </record>
+        <record id="car_mazda" model="taller.brand">
+            <field name="name">Mazda</field>
+        </record>
+
+    </data>
+</odoo>
