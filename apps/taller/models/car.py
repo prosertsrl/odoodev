@@ -12,6 +12,7 @@ class Car(models.Model):
     brand = fields.Char(string="Brand")
     date_car = fields.Date("Date Car")
     km = fields.Integer("Km")
+    cylinder = fields.Integer(string="Cylinder")
 #     value = fields.Integer()
 #     value2 = fields.Float(compute="_value_pc", store=True)
 #     description = fields.Text()
