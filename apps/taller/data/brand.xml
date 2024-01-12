@@ -3,6 +3,7 @@
     <data noupdate="0">
         <record id="car_audi" model="taller.brand">
             <field name="name">Audi</field>
+<!--            <field name="image" widget="image" class="oe_avatar" options="{'preview_image': 'image_128'}"/>-->
         </record>
         <record id="car_toyota" model="taller.brand">
             <field name="name">Toyota</field>
